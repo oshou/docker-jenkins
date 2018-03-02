@@ -1,13 +1,9 @@
-# docker-lamp-stack
-
-## Stack
-- [debian] apache2.4 + mod-php(php5.6)
-- [debian] mysql5.7
+# docker-jenkins
 
 ## Get started
 
 ```
-$ git clone https://github.com/oshou/docker-lamp-stack.git
-$ cd docker-lamp-stack
+$ git clone https://github.com/oshou/docker-jenkins.git
+$ cd docker-jenkins
 $ docker-compose up -d
 ```

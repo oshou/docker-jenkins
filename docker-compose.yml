@@ -1,0 +1,15 @@
+version: '2'
+services:
+  data-volume:
+    container_name: 'data-volume'
+    image: busybox
+    volumes: 
+      - ./data/jenkins_home:/var/jenkins_home
+  jenkins:
+    container_name: jenkins-alpine
+    build: ./conf/jenkins
+    ports:
+      - 8080:8080
+      - 50000:50000
+    volumes_from:
+      - data-volume
